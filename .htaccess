@@ -1,0 +1,7 @@
+ErrorDocument 404 https://but-mmichamps.fr/error.php?code=404
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
