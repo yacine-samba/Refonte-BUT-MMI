@@ -1,5 +1,6 @@
 <?php
 session_start();
+phpinfo();
 include("connect.php");
 ?>
 
